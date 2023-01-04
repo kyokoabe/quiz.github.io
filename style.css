@@ -1,0 +1,46 @@
+@charset "UTF-8";
+html{font-size:100%;}
+body{font-family:"Yu Gothic Medium","游ゴシック　Medium",YuGothic,"ヒラギノ角ゴ　Pro W3",sans-serif;
+     line-height:1.7;
+     color:#432;
+    text-align: center;
+  background-color: #e6f0f0;}
+
+
+.quizzes-container {
+       width: 400px;
+       margin: 50px auto;
+       text-align: center;
+     }
+
+     .quiz-container {
+       border-bottom:1px solid black;
+       padding-bottom: 20px;
+     }
+
+     .btn {
+       font-size: 1rem;
+               background: #0bd;
+                color: #fff;
+                border-radius: 5px;
+                padding: 10px 20px;
+                text-align: center;
+                margin:10px;
+     }
+.btn:hover{background:#0090aa;}
+     #score-container {
+       border: 1px solid black;
+       height: 50px;
+     }
+
+  .btn-score {
+    font-size: 1rem;
+            background: #0bd;
+             color: #fff;
+             border-radius: 5px;
+             padding: 10px 20px;
+             text-align: center;
+             margin:10px;
+     }
+
+@media(max-width:600px){}
