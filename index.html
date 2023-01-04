@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>三択クイズ</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+<body>
+<div class="quizzes-container">
+  <h1>三択クイズ  </h1>
+  <p>回答するを一個ずつ押してください。<br>
+    最後合計得点を見るを押すと点数が出ます。</p>
+  <div class="quiz-container">
+    <h2>第1問</h2>
+    <div>
+      <p>日本で2番目に多い苗字は何？</p>
+    </div>
+    <form id="quiz-1">
+      <input name="answer" type="radio" value="a">佐藤</input>
+      <input name="answer" type="radio" value="b">鈴木</input>
+      <input name="answer" type="radio" value="c">田中</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz1();">回答する</button>
+  </div>
+  <div class="quiz-container">
+    <h2>第2問</h2>
+    <div>
+      <p>ガリガリくんの当たりが出る確率は？</p>
+    </div>
+    <form id="quiz-2">
+      <input name="answer" type="radio" value="a">3.2%</input>
+      <input  name="answer" type="radio" value="b">1.5%</input>
+      <input name="answer" type="radio" value="c">2.3%</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz2();">回答する</button>
+  </div>
+  <div class="quiz-container">
+    <h2>第3問</h2>
+    <div>
+      <p>バナナと人間のDNAは何パーセント同じ？</p>
+    </div>
+    <form id="quiz-3">
+      <input name="answer" type="radio" value="a">30%</input>
+      <input name="answer" type="radio" value="b">10%</input>
+      <input name="answer" type="radio" value="c">60%</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz3();">回答する</button>
+  </div>
+  <div id="score-container">
+    <p id="score-message"></p>
+  </div>
+  <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
